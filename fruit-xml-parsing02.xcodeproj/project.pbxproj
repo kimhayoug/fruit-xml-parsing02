@@ -12,7 +12,7 @@
 		FD1D1D6B214F764C00158988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1D1D69214F764C00158988 /* Main.storyboard */; };
 		FD1D1D6D214F764D00158988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD1D1D6C214F764D00158988 /* Assets.xcassets */; };
 		FD1D1D70214F764D00158988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD1D1D6E214F764D00158988 /* LaunchScreen.storyboard */; };
-		FD1D1D7A214F7D9B00158988 /* Fruit.xml in Resources */ = {isa = PBXBuildFile; fileRef = FD1D1D79214F7D9B00158988 /* Fruit.xml */; };
+		FD5702E22150C31100178917 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5702E12150C31100178917 /* FruitData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		FD1D1D6C214F764D00158988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD1D1D6F214F764D00158988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD1D1D71214F764D00158988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD1D1D79214F7D9B00158988 /* Fruit.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Fruit.xml; path = "../../Fruit 03/Fruit 03/Fruit.xml"; sourceTree = "<group>"; };
+		FD5702E12150C31100178917 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 				FD1D1D69214F764C00158988 /* Main.storyboard */,
 				FD1D1D6C214F764D00158988 /* Assets.xcassets */,
 				FD1D1D6E214F764D00158988 /* LaunchScreen.storyboard */,
-				FD1D1D79214F7D9B00158988 /* Fruit.xml */,
 				FD1D1D71214F764D00158988 /* Info.plist */,
+				FD5702E12150C31100178917 /* FruitData.swift */,
 			);
 			path = "fruit-xml-parsing02";
 			sourceTree = "<group>";
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					FD1D1D61214F764C00158988 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -127,7 +128,6 @@
 			files = (
 				FD1D1D70214F764D00158988 /* LaunchScreen.storyboard in Resources */,
 				FD1D1D6D214F764D00158988 /* Assets.xcassets in Resources */,
-				FD1D1D7A214F7D9B00158988 /* Fruit.xml in Resources */,
 				FD1D1D6B214F764C00158988 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +141,7 @@
 			files = (
 				FD1D1D68214F764C00158988 /* ViewController.swift in Sources */,
 				FD1D1D66214F764C00158988 /* AppDelegate.swift in Sources */,
+				FD5702E22150C31100178917 /* FruitData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "fruit-xml-parsing02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +294,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dit.ac.kr.fruit-xml-parsing02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fruit-xml-parsing02/fruit-xml-parsing02-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "fruit-xml-parsing02/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dit.ac.kr.fruit-xml-parsing02";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fruit-xml-parsing02/fruit-xml-parsing02-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
